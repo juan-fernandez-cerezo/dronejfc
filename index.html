@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneJFC Videos | Filmación Aérea de Alta Tecnología</title>
+    <!-- Favicon / Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Archivo CSS Modular -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Drone<span>JFC</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Presupuesto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN INICIO (HERO) -->
+    <div id="inicio" class="hero">
+        <!-- Background Video / Fallback to Image -->
+        <video class="hero-video" autoplay loop muted playsinline poster="imagenes/Foto18 Candeleda.jpeg">
+            <!-- URL DE VIDEO DE EJEMPLO DE DRONE (Stock gratuito) -->
+            <source src="https://cdn.pixabay.com/video/2021/08/04/83866-584733355_large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <div class="hero-tag">Producción Aérea 4K</div>
+            <h1>Perspectivas que <span>desafían</span> la gravedad</h1>
+            <p>Especialistas en filmación aérea y producción cinemática con drones. Capturamos tus ideas desde un ángulo
+                que dejará a todos sin palabras.</p>
+            <a href="#contacto" class="btn">
+                Iniciar Proyecto <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios">
+        <div class="section-header reveal">
+            <h2 class="section-title">Nuestros <span>Servicios</span></h2>
+            <p class="section-subtitle">Tecnología de vanguardia para obtener resultados visuales impresionantes.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <i class="fa-solid fa-glass-cheers service-icon"></i>
+                <h3>Eventos</h3>
+                <p>Bodas, fiestas, conciertos y todo tipo de celebraciones. Inmortalizamos tus momentos especiales con
+                    tomas aéreas espectaculares.</p>
+            </div>
+            <div class="service-card reveal" style="transition-delay: 0.1s;">
+                <i class="fa-solid fa-mountain-sun service-icon"></i>
+                <h3>Naturaleza y Paisaje</h3>
+                <p>Capturamos la belleza del entorno con vuelos suaves y alta resolución, ideal para promoción turística
+                    o documental.</p>
+            </div>
+            <div class="service-card reveal" style="transition-delay: 0.2s;">
+                <i class="fa-solid fa-building service-icon"></i>
+                <h3>Inmobiliario</h3>
+                <p>Muestra las propiedades en venta o alquiler desde una vista privilegiada, destacando el terreno y los
+                    alrededores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN GALERÍA / PROYECTOS -->
+    <section id="proyectos">
+        <div class="section-header reveal">
+            <h2 class="section-title">Últimos <span>Vuelos</span></h2>
+            <p class="section-subtitle">Una muestra de lo que somos capaces de capturar.</p>
+        </div>
+        <div class="portfolio-grid">
+
+            <!-- Foto Candeleda 1 -->
+            <div class="portfolio-item reveal">
+                <img src="imagenes/Foto18 Candeleda.jpeg" alt="Paisaje Candeleda 1">
+                <div class="portfolio-overlay">
+                    <h3>Horizonte Natural</h3>
+                    <p>Candeleda, España - Cinematografía</p>
+                </div>
+            </div>
+
+            <!-- Foto Candeleda 2 -->
+            <div class="portfolio-item reveal" style="transition-delay: 0.1s;">
+                <img src="imagenes/Foto8 Candeleda.jpeg" alt="Paisaje Candeleda 2">
+                <div class="portfolio-overlay">
+                    <h3>Vista Aérea</h3>
+                    <p>Candeleda, España - Fotografía 4K</p>
+                </div>
+            </div>
+
+            <!-- Foto Generada 1: Cinematic (Usando la imagen generada) -->
+            <div class="portfolio-item reveal" style="transition-delay: 0.2s;">
+                <img src="C:\Users\Juan\.gemini\antigravity\brain\87d87a6b-b932-4094-83a7-8b29ff769d5b\cinematic_drone_shot_1779131477789.png"
+                    alt="Costa al atardecer"
+                    onerror="this.src='https://images.unsplash.com/photo-1506947411487-a56738267384?auto=format&fit=crop&q=80&w=800'">
+                <div class="portfolio-overlay">
+                    <h3>Atardecer en la Costa</h3>
+                    <p>Toma Cinemática con Drone</p>
+                </div>
+            </div>
+
+            <!-- Foto Generada 2: Eventos (Usando la imagen generada) -->
+            <div class="portfolio-item reveal" style="transition-delay: 0.3s;">
+                <img src="C:\Users\Juan\.gemini\antigravity\brain\87d87a6b-b932-4094-83a7-8b29ff769d5b\wedding_drone_shot_1779131909382.png"
+                    alt="Boda desde drone"
+                    onerror="this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800'">
+                <div class="portfolio-overlay">
+                    <h3>Celebraciones Inolvidables</h3>
+                    <p>Eventos y Bodas</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;" class="reveal">
+            <a href="https://instagram.com/tu_usuario_aqui" target="_blank" class="btn"
+                style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; box-shadow: 0 0 20px rgba(220, 39, 67, 0.4);">
+                <i class="fa-brands fa-instagram" style="font-size: 1.2rem;"></i> Ver más en Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto">
+        <div class="contact-wrapper reveal">
+            <div class="contact-info">
+                <h3>Prepara tu plan de <span>Vuelo</span></h3>
+                <p>Cada proyecto es único. Cuéntanos qué necesitas y diseñaremos una estrategia de grabación a medida
+                    para conseguir las mejores tomas posibles.</p>
+
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check-circle"></i> Pilotos Certificados AESA</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Seguro de Responsabilidad Civil</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Edición de video personalizado</li>
+                </ul>
+            </div>
+
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <label for="nombre">Nombre Completo</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <label for="email">Correo Electrónico</label>
+                </div>
+                <div class="form-group">
+                    <select id="tipo" name="tipo">
+                        <option value="" disabled selected>Selecciona el tipo de proyecto...</option>
+                        <option value="evento">Eventos / Bodas / Fiestas</option>
+                        <option value="naturaleza">Naturaleza / Paisaje</option>
+                        <option value="inmobiliaria">Inmobiliario / Promoción</option>
+                        <option value="otro">Otro tipo de proyecto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
+                    <label for="mensaje">Describe tu idea</label>
+                </div>
+                <button type="submit" class="btn">
+                    Solicitar Presupuesto <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">Drone<span>JFC</span></div>
+        <p class="footer-text">&copy; 2026 DroneJFC Videos. Operador de drones registrado. Todos los derechos
+            reservados.</p>
+    </footer>
+
+    <!-- Archivo JS Modular -->
+    <script src="main.js"></script>
+</body>
+
+</html>
