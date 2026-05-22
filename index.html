@@ -122,50 +122,32 @@
 
     <!-- SECCIÓN CONTACTO -->
     <section id="contacto">
-        <div class="contact-wrapper reveal">
-            <div class="contact-info">
-                <h3>Prepara tu plan de <span>Vuelo</span></h3>
-                <p>Cada proyecto es único. Cuéntanos qué necesitas y diseñaremos una estrategia de grabación a medida
-                    para conseguir las mejores tomas posibles.</p>
-
-                <ul class="features-list">
-                    <li><i class="fa-solid fa-check-circle"></i> Pilotos Certificados AESA</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Seguro de Responsabilidad Civil</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Edición de video personalizado</li>
-                </ul>
+        <form class="contact-form" action="https://formspree.io/f/xaqkjyvp" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="Nombre" placeholder="Tu nombre" required>
             </div>
-
-            <form class="contact-form" action="#" method="POST">
-                <div class="form-group">
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                    <label for="nombre">Nombre Completo</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                    <label for="email">Correo Electrónico</label>
-                </div>
-                <div class="form-group">
-                    <input type="telefono" id="telefono" name="telefono" placeholder="Teléfono" required>
-                    <label for="telefono">Teléfono</label>
-                </div>
-                <div class="form-group">
-                    <select id="tipo" name="tipo">
-                        <option value="" disabled selected>Selecciona el tipo de proyecto...</option>
-                        <option value="evento">Eventos / Bodas / Fiestas</option>
-                        <option value="naturaleza">Naturaleza / Paisaje</option>
-                        <option value="inmobiliaria">Inmobiliario / Promoción</option>
-                        <option value="otro">Otro tipo de proyecto</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
-                    <label for="mensaje">Describe tu idea</label>
-                </div>
-                <button type="submit" class="btn">
-                    Solicitar Presupuesto <i class="fa-solid fa-paper-plane"></i>
-                </button>
-            </form>
-        </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="Email" placeholder="tu@correo.com" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo de Video</label>
+                <select id="tipo" name="Tipo de Video">
+                    <option value="inmobiliaria">Inmobiliario / Corporativo</option>
+                    <option value="evento">Eventos / Bodas</option>
+                    <option value="fpv">Acción / FPV Comercial</option>
+                    <option value="otro">Otro (A medida)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Cuéntanos tu idea</label>
+                <textarea id="mensaje" name="Mensaje" rows="4" placeholder="Describe los detalles del video que necesitas..." required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="¡Nuevo cliente potencial en DroneJFC!">
+            
+            <button type="submit" class="btn">Enviar Propuesta</button>
+        </form>
     </section>
 
     <!-- FOOTER -->
