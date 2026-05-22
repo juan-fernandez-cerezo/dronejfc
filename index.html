@@ -129,29 +129,35 @@
         <div style="max-width: 600px; margin: 0 auto;" class="reveal">
             <form class="contact-form" action="https://formspree.io/f/xaqkjyvp" method="POST">
                 
-                <div class="form-group" style="margin-bottom: 1.5rem; text-align: left;">
-                    <label for="nombre" style="display: block; margin-bottom: 0.5rem; color: #ffffff; font-weight: bold;">Nombre Completo</label>
-                    <input type="text" id="nombre" name="Nombre" required style="width: 100%; display: block;">
+                <div class="form-group">
+                    <input type="text" id="nombre" name="Nombre" placeholder=" " required>
+                    <label for="nombre">Nombre Completo</label>
                 </div>
                 
-                <div class="form-group" style="margin-bottom: 1.5rem; text-align: left;">
-                    <label for="email" style="display: block; margin-bottom: 0.5rem; color: #ffffff; font-weight: bold;">Correo Electrónico</label>
-                    <input type="email" id="email" name="Email" required style="width: 100%; display: block;">
+                <div class="form-group">
+                    <input type="email" id="email" name="Email" placeholder=" " required>
+                    <label for="email">Correo Electrónico</label>
                 </div>
                 
-                <div class="form-group" style="margin-bottom: 1.5rem; text-align: left;">
-                    <label for="tipo" style="display: block; margin-bottom: 0.5rem; color: #ffffff; font-weight: bold;">Tipo de Video</label>
-                    <select id="tipo" name="Tipo de Video" style="width: 100%; display: block;">
+                <div class="form-group">
+                    <input type="tel" id="telefono" name="Telefono" placeholder=" ">
+                    <label for="telefono">Teléfono</label>
+                </div>
+                
+                <div class="form-group">
+                    <select id="tipo" name="Tipo de Video" required>
+                        <option value="" disabled selected hidden></option>
                         <option value="inmobiliaria">Inmobiliario / Corporativo</option>
                         <option value="evento">Eventos / Bodas</option>
                         <option value="fpv">Acción / FPV Comercial</option>
                         <option value="otro">Otro (A medida)</option>
                     </select>
+                    <label for="tipo">Tipo de Video</label>
                 </div>
                 
-                <div class="form-group" style="margin-bottom: 1.5rem; text-align: left;">
-                    <label for="mensaje" style="display: block; margin-bottom: 0.5rem; color: #ffffff; font-weight: bold;">Cuéntanos tu idea</label>
-                    <textarea id="mensaje" name="Mensaje" rows="4" required style="width: 100%; display: block;"></textarea>
+                <div class="form-group">
+                    <textarea id="mensaje" name="Mensaje" rows="4" placeholder=" "></textarea>
+                    <label for="mensaje">Cuéntanos tu idea</label>
                 </div>
                 
                 <input type="hidden" name="_subject" value="¡Nuevo cliente potencial en DroneJFC!">
